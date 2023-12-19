@@ -1,54 +1,70 @@
-# Storehouse Web App
+# Getting Started with Create React App
 
-Welcome to the Storehouse Web App repository! This project is a platform designed to connect clients with available storehouses, offering specific products. Below, you'll find an overview of the project and instructions on how to navigate this repository.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview:
+## Available Scripts
 
-The Storehouse Web App includes the following key features:
-- User authentication and authorization
-- User account management
-- Storehouse offers management
-- Storehouse management
+In the project directory, you can run:
 
-## Project Structure:
+### `npm start`
 
-- **`/src`:** Contains the source code for the web application.
-- **`/database`:** Includes the PostgreSQL database schema and related scripts.
-- **`/docs`:** Holds user documentation and technical documentation.
-- **`/design`:** Includes design assets such as UI/UX designs.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Project Plan:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Check the [ProjPlan.pdf) for details on the project scope, timeline, and resource allocation.
+### `npm test`
 
-## Source Code:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Browse the source code in the [`/src`](/src) directory. The application is built using [Framework/Language], and you can find details on dependencies and setup in the documentation.
+### `npm run build`
 
-## Database Schema:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Explore the PostgreSQL database schema in the [`/database`](/database) directory. The schema diagram is available as [diagram.png](/database/diagram.png). Also, check [database_setup.sql](/database/database_setup.sql) for script details.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Documentation:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- User documentation is available in [documentation.pdf).
-- Technical documentation can be found in [technicaldocumentation.pdf).
+### `npm run eject`
 
-## Getting Started:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-To run the Storehouse Web App locally, follow these steps:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Clone the repository: `git clone https://github.com/your-username/storehouse.git`
-2. Navigate to the project directory: `cd storehouse`
-3. Set up the PostgreSQL database by running the script [database/database_setup.sql](/database/database_setup.sql).
-4. Set up the development environment as described in the technical documentation.
-5. Execute the application and start exploring the features!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Contributors:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- Project Manager: Boris Manzi
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Feel free to reach out for any questions or feedback! Happy coding!
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
