@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "c65c2cb8-1a35-4263-900c-5b79471e0597",
+		"name": "WareHouseCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15929850"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "sign-up",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user678@gmail.com\",\n  \"fullName\": \"user678\",\n  \"gender\": \"FEMALE\",\n  \"password\": \"password\",\n  \"repeatpassword\": \"password\",\n  \"username\": \"user678\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register-business",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"john_doe\",\n  \"businessName\": \"Doe Enterprises\",\n  \"address\": \"123 Main Street, Cityville\",\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"securepassword\",\n  \"repeatpassword\": \"securepassword\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/signup",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-business",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/business",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"business"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/signup",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/signup",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOfferDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/theWarehouses/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"theWarehouses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getoffers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/home?username=warehouse1&role=business",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"home"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "warehouse1"
+								},
+								{
+									"key": "role",
+									"value": "business"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"warehouse1\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login?username=warehouse1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "warehouse1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"password\",\n    \"username\": \"warehouse1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "warehouse1",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAccountInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/business?username=warehouse1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "warehouse1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAccountDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"Kigali, Kimironko\",\n    \"businessName\": \"Kacyiru WareHouse LTD\",\n    \"email\": \"williamnshuti@gmail.com\",\n    \"id\": 4,\n    \"username\": \"warehouse1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/business",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-offeer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"category\": \"MACHINERY\",\n  \"contactInfo\": \"Call on 0780311712\\n\",\n  \"creator\": \"warehouse1\",\n  \"description\": \"We have Private Jets that are new, affordable for wholesaler.\\nGuarantee of 5 years.\",\n  \"galleryImg1_id\": \"ntanvhixu3cmzauawwsk\",\n  \"galleryImg2_id\": \"mo5nldmgczsy3bdtdpbf\",\n  \"galleryImg3_id\": \"lfm0eddtyslf3pwqh05a\",\n  \"galleryImgUrl1\": \"https://res.cloudinary.com/dsbs0e5f4/image/upload/v1702827186/ntanvhixu3cmzauawwsk.jpg\",\n  \"galleryImgUrl2\": \"https://res.cloudinary.com/dsbs0e5f4/image/upload/v1702827199/mo5nldmgczsy3bdtdpbf.jpg\",\n  \"galleryImgUrl3\": \"https://res.cloudinary.com/dsbs0e5f4/image/upload/v1702827201/lfm0eddtyslf3pwqh05a.jpg\",\n  \"intro\": \"Welcome to Private Jets World.\",\n  \"location\": \"KIGALI\",\n  \"name\": \"Private Jets\",\n  \"price\": \"14000000\",\n  \"profileImgUrl\": \"https://res.cloudinary.com/dsbs0e5f4/image/upload/v1702827171/wnp0lheav758nbcvn5sv.jpg\",\n  \"profileImg_id\": \"wnp0lheav758nbcvn5sv\",\n  \"slogan\": \"Best Private Jets in Africa\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/theWarehouses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"theWarehouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResetPassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3YXJlaG91c2UxIiwiZXhwIjoxNzAyODQzMDkyLCJpYXQiOjE3MDI4MjUwOTJ9.m7qAQt__7eU8DlfgFhUKjM_pplxDfSosH0I4oT817QdD9rob65qsedPoV6asVJPuC_taYD0KF8cCkuTsJfGLTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/notification?email=williamnshuti@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notification"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "williamnshuti@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
